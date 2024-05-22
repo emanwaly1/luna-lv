@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products_Shopping Cart</title>
+    <!-- Link -->
+    <link rel="stylesheet" href="test.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+       <!-- navbar -->
+       <header>
+        <!-- nav -->
+        <div class="nav container">
+            <!-- logo -->
+            <a href="#" class="logo">Instruments</a>
+            <!-- Cart Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i> 
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Shop Products</h2>
+                <!-- Content -->
+                <div class="cart-content">
+                    
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- Close Cart -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+     <!-- Products -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Shop Content -->
+        <div class="shop-content">
+            
+            <div class="product-box">
+                <img src="photo/th.jpg" alt="" data-filter="wood instruments" class="product-img">
+                <h2 class="product-title">Tambur</h2>
+                <span class="price">$80</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="photo/West-African-Lute-Natural-Instrument-1024x731.webp" alt="" data-filter="wood instruments" class="product-img">
+                <h2 class="product-title">Lute</h2>
+                <span class="price">$90</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="photo/d3659e9c7bd8371c27bf9ee9afa465ce.jpg" alt="" data-filter="wood instruments" class="product-img">
+                <h2 class="product-title">Bubab</h2>
+                <span class="price">$70</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="photo/rudra-veena.webp" alt="" data-filter="wood instruments" class="product-img">
+                <h2 class="product-title">Veena</h2>
+                <span class="price">$85</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="photo/fecbf997ceb3c6b695572cf462db92c1.jpg" alt="" data-filter="wood instruments" class="product-img">
+                <h2 class="product-title">Tambura</h2>
+                <span class="price">$75</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="photo/OIP.jpg" alt="" data-filter="metal instruments"  class="product-img">
+                <h2 class="product-title">Gramophone</h2>
+                <span class="price">$100</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="photo/b4bb65373af45dd35124bd4ce853c348--antiques-music-instruments.jpg" alt="" data-filter="wood instruments" class="product-img">
+                <h2 class="product-title">Zither</h2>
+                <span class="price">$50</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div> 
+            <div class="product-box">
+                <img src="photo/18d33a0735044ca4d2cfbe674eef7a39.jpg" alt=""data-filter="wood instruments"  class="product-img">
+                <h2 class="product-title">Old guitar</h2>
+                <span class="price">$55</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div> 
+        </div>
+    </section>
+    <!-- <script>
+        const liItem = document.querySelectorAll('ul li');
+const imgItem = document.querySelectorAll('.product img');
+liItem.forEach(li => {
+  li.onclick = function() e{
+// Active
+liItem.forEach(li => {
+    li.className = "";
+})
+li.className = "active";
+  } 
+  // Filter
+  const value = li.textContent;
+  imgItem.forEach(img => {
+     img.style.display = 'none';
+     console.log(img.getAttribute('data-filter'));
+     if(img.getAttribute('data-filter')== value.toLowerCase() || value == "All Instruments"){
+        img.style.display = 'block';
+     }
+  }) 
+});
+    </script> -->
+</body>
+<script src="test.js"></script>
+</html>
